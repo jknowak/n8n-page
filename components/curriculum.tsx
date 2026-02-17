@@ -90,7 +90,7 @@ export function Curriculum() {
           {modules.map((mod) => (
             <Card
               key={mod.number}
-              className="group border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:bg-card/80"
+              className="group border-border/50 bg-card transition-all duration-300 hover:border-primary/20 hover:bg-card/80"
             >
               <CardHeader>
                 <div className="mb-2 flex items-center gap-3">

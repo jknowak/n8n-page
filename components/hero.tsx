@@ -5,9 +5,10 @@ import { ArrowRight, Bot, Workflow } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pt-32 pb-20 md:pt-44 md:pb-32">
-      {/* Background glow */}
+      {/* Background glows */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]" />
+        <div className="absolute top-1/4 left-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/6 blur-[120px]" />
+        <div className="absolute top-1/3 right-1/4 h-[400px] w-[400px] rounded-full bg-accent/5 blur-[100px]" />
       </div>
 
       <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
@@ -37,7 +38,7 @@ export function Hero() {
           <Button
             variant="outline"
             size="lg"
-            className="h-12 px-8 text-base"
+            className="h-12 border-accent/40 px-8 text-base text-foreground hover:bg-accent/10"
           >
             <Workflow className="mr-1 size-4" />
             View Curriculum

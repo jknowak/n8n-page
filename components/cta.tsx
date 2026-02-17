@@ -7,7 +7,7 @@ export function CTA() {
       <div className="relative mx-auto max-w-4xl overflow-hidden rounded-2xl border border-primary/20 bg-primary/5 px-6 py-16 text-center md:px-16">
         {/* Background glow */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute bottom-0 left-1/2 h-[300px] w-[500px] -translate-x-1/2 translate-y-1/2 rounded-full bg-primary/10 blur-[100px]" />
+          <div className="absolute bottom-0 left-1/2 h-[300px] w-[500px] -translate-x-1/2 translate-y-1/2 rounded-full bg-primary/8 blur-[100px]" />
         </div>
 
         <div className="relative">

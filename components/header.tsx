@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -16,13 +17,22 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <span className="text-lg font-bold text-foreground">
-            airm<span className="text-primary">.pro</span>
-          </span>
-          <span className="hidden text-sm text-muted-foreground sm:inline">
-            / n8n Training
-          </span>
+        <a href="/" className="flex items-center gap-2.5">
+          <Image
+            src="/images/logo.png"
+            alt="airm.pro logo"
+            width={32}
+            height={32}
+            className="size-8"
+          />
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-lg font-bold text-foreground">
+              airm<span className="text-accent">.pro</span>
+            </span>
+            <span className="hidden text-xs font-medium tracking-wide uppercase text-primary sm:inline">
+              n8n Training
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}
