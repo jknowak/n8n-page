@@ -1,12 +1,4 @@
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import {
   Brain,
   MessageSquareText,
   GitFork,
@@ -18,109 +10,101 @@ import {
 const modules = [
   {
     number: "01",
-    title: "LLMs Theory",
+    title: "Teoria LLM",
     description:
-      "Understand the architecture behind Large Language Models. Transformers, tokenization, attention mechanisms, and how models generate text.",
+      "Zrozum architekture duzych modeli jezykowych. Transformery, tokenizacja, mechanizmy uwagi i sposob generowania tekstu.",
     icon: Brain,
-    tags: ["Transformers", "Tokenization", "Attention"],
+    tags: ["Transformery", "Tokenizacja", "Uwaga"],
   },
   {
     number: "02",
     title: "Prompt Engineering",
     description:
-      "Master the art and science of crafting effective prompts. Learn techniques like chain-of-thought, few-shot learning, and structured output formatting.",
+      "Opanuj sztuke tworzenia skutecznych promptow. Techniki chain-of-thought, few-shot learning i formatowanie strukturalnych odpowiedzi.",
     icon: MessageSquareText,
     tags: ["Chain-of-Thought", "Few-shot", "System Prompts"],
   },
   {
     number: "03",
-    title: "LLMs vs Workflows vs Agents",
+    title: "LLM vs Workflow vs Agenci",
     description:
-      "Know when to use a simple LLM call, a structured workflow, or an autonomous agent. Decision frameworks for real-world automation.",
+      "Wiedz, kiedy uzyc prostego wywolania LLM, kiedy ustrukturyzowanego workflow, a kiedy autonomicznego agenta. Ramki decyzyjne dla realnych zastosowan.",
     icon: GitFork,
-    tags: ["Decision Frameworks", "Use Cases", "Architecture"],
+    tags: ["Ramki decyzyjne", "Przypadki uzycia", "Architektura"],
   },
   {
     number: "04",
-    title: "n8n Workflow Basics",
+    title: "Podstawy n8n",
     description:
-      "Get hands-on with n8n. Build your first workflows, connect triggers, work with HTTP nodes, and integrate APIs into automated pipelines.",
+      "Praktyczna praca z n8n. Buduj pierwsze workflow, podlaczaj triggery, pracuj z HTTP nodes i integruj API w zautomatyzowane pipeline-y.",
     icon: Workflow,
-    tags: ["Nodes", "Triggers", "HTTP Requests"],
+    tags: ["Node-y", "Triggery", "Zapytania HTTP"],
   },
   {
     number: "05",
-    title: "RAG Explained",
+    title: "RAG od podstaw",
     description:
-      "Deep dive into Retrieval-Augmented Generation. Learn about vector databases, embeddings, chunking strategies, and retrieval pipelines.",
+      "Zaglebienie w Retrieval-Augmented Generation. Bazy wektorowe, embeddingi, strategie chunkowania i pipeline-y wyszukiwania.",
     icon: Database,
-    tags: ["Embeddings", "Vector DBs", "Chunking"],
+    tags: ["Embeddingi", "Bazy wektorowe", "Chunking"],
   },
   {
     number: "06",
-    title: "RAG Workflows in n8n",
+    title: "Workflow RAG w n8n",
     description:
-      "Build complete RAG pipelines in n8n. From document ingestion and embedding to retrieval and LLM-powered response generation.",
+      "Buduj kompletne pipeline-y RAG w n8n. Od pozyskiwania dokumentow i embeddingu po wyszukiwanie i generowanie odpowiedzi z LLM.",
     icon: Layers,
-    tags: ["Pipelines", "Ingestion", "Production RAG"],
+    tags: ["Pipeline-y", "Ingestion", "Produkcyjny RAG"],
   },
 ]
 
 export function Curriculum() {
   return (
-    <section id="curriculum" className="px-4 py-20 md:py-32">
+    <section id="program" className="px-4 py-20 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
-          <Badge
-            variant="outline"
-            className="mb-4 border-primary/30 bg-primary/5 text-primary"
-          >
-            Curriculum
-          </Badge>
+          <div className="mb-4 inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
+            Program szkolenia
+          </div>
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-5xl">
-            What You Will Learn
+            Czego sie nauczysz
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            Six comprehensive modules taking you from AI fundamentals to building
-            production-ready automation workflows.
+            {"Szesc kompleksowych modulow, ktore przeprowadza Cie od podstaw AI do budowy produkcyjnych workflow-ow automatyzacji."}
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {modules.map((mod) => (
-            <Card
+            <div
               key={mod.number}
-              className="group border-border/50 bg-card transition-all duration-300 hover:border-primary/20 hover:bg-card/80"
+              className="group rounded-xl border border-border/50 bg-card p-6 transition-all duration-300 hover:border-primary/20"
             >
-              <CardHeader>
-                <div className="mb-2 flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <mod.icon className="size-5" />
-                  </div>
-                  <span className="font-mono text-sm text-muted-foreground">
-                    Module {mod.number}
+              <div className="mb-3 flex items-center gap-3">
+                <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <mod.icon className="size-5" />
+                </div>
+                <span className="font-mono text-sm text-muted-foreground">
+                  {"Modul"} {mod.number}
+                </span>
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-foreground">
+                {mod.title}
+              </h3>
+              <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                {mod.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {mod.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-md bg-secondary px-2.5 py-1 text-xs text-muted-foreground"
+                  >
+                    {tag}
                   </span>
-                </div>
-                <CardTitle className="text-lg text-foreground">
-                  {mod.title}
-                </CardTitle>
-                <CardDescription className="leading-relaxed">
-                  {mod.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {mod.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-md bg-secondary px-2.5 py-1 text-xs text-muted-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

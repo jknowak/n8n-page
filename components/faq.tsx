@@ -6,33 +6,32 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Badge } from "@/components/ui/badge"
 
 const faqs = [
   {
-    question: "Do I need programming experience?",
+    question: "Czy potrzebuje doswiadczenia w programowaniu?",
     answer:
-      "No prior programming experience is required. n8n is a visual workflow builder, and we cover everything from the basics. However, having some familiarity with APIs or JSON will help you move faster.",
+      "Nie jest wymagane wczesniejsze doswiadczenie programistyczne. n8n to wizualny kreator workflow i omawiamy wszystko od podstaw. Jednak znajomosc API lub JSON pomoze Ci szybciej przyswajac material.",
   },
   {
-    question: "What is n8n and why use it for AI automation?",
+    question: "Czym jest n8n i dlaczego warto go uzywac do automatyzacji AI?",
     answer:
-      "n8n is an open-source workflow automation tool that lets you connect any service with a visual, node-based editor. It is ideal for AI automation because it supports LLM integrations, vector databases, and complex branching logic without writing code.",
+      "n8n to open-source-owe narzedzie do automatyzacji workflow, ktore pozwala laczyc dowolne uslugi za pomoca wizualnego edytora opartego na nodach. Jest idealne do automatyzacji AI, poniewaz wspiera integracje z LLM, bazy wektorowe i zlozana logike warunkowa bez pisania kodu.",
   },
   {
-    question: "What will I be able to build after this training?",
+    question: "Co bede w stanie zbudowac po tym szkoleniu?",
     answer:
-      "You will be able to build AI-powered automation workflows including RAG pipelines for document Q&A, AI chatbots with memory, content generation pipelines, data processing workflows with LLM intelligence, and more.",
+      "Bedziesz w stanie budowac workflow automatyzacji napedzane AI, w tym pipeline RAG do Q&A z dokumentow, chatboty AI z pamiecia, pipeline generowania tresci, workflow przetwarzania danych z inteligencja LLM i wiele wiecej.",
   },
   {
-    question: "How is the training delivered?",
+    question: "Jak wyglada format szkolenia?",
     answer:
-      "The training is structured as a progressive course with hands-on exercises. Each module builds on the previous one, ensuring you develop a complete understanding from LLM fundamentals to production RAG workflows.",
+      "Szkolenie ma strukture progresywnego kursu z praktycznymi cwiczeniami. Kazdy modul buduje na poprzednim, zapewniajac pelne zrozumienie od fundamentow LLM po produkcyjne workflow RAG.",
   },
   {
-    question: "Do I need my own n8n instance?",
+    question: "Czy potrzebuje wlasnej instancji n8n?",
     answer:
-      "We will guide you through setting up n8n. You can use the free self-hosted version or n8n cloud. Detailed setup instructions are included in the course materials.",
+      "Poprowadzimy Cie przez konfiguracje n8n. Mozesz uzyc darmowej wersji self-hosted lub n8n cloud. Szczegolowe instrukcje konfiguracji sa dolaczone do materialow szkoleniowych.",
   },
 ]
 
@@ -41,14 +40,11 @@ export function FAQ() {
     <section id="faq" className="border-t border-border/50 px-4 py-20 md:py-32">
       <div className="mx-auto max-w-3xl">
         <div className="mb-12 text-center">
-          <Badge
-            variant="outline"
-            className="mb-4 border-primary/30 bg-primary/5 text-primary"
-          >
+          <div className="mb-4 inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
             FAQ
-          </Badge>
+          </div>
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-            Frequently Asked Questions
+            {"Czesto zadawane pytania"}
           </h2>
         </div>
 
@@ -62,7 +58,7 @@ export function FAQ() {
               <AccordionTrigger className="text-left text-base text-foreground hover:no-underline hover:text-primary">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="leading-relaxed text-muted-foreground">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

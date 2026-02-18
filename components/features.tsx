@@ -3,27 +3,27 @@ import { Zap, Code2, Users, GraduationCap } from "lucide-react"
 const features = [
   {
     icon: Code2,
-    title: "Hands-On Practice",
+    title: "Praktyczne cwiczenia",
     description:
-      "Every module comes with real n8n workflows you build from scratch. No theory-only slides.",
+      "Kazdy modul zawiera realne workflow n8n, ktore budujesz od zera. Zadnych prezentacji tylko z teoria.",
   },
   {
     icon: Zap,
-    title: "Production-Ready",
+    title: "Gotowe do produkcji",
     description:
-      "Learn patterns and architectures you can deploy immediately in your business or for clients.",
+      "Poznaj wzorce i architektury, ktore mozesz wdrozyc natychmiast w swoim biznesie lub dla klientow.",
   },
   {
     icon: Users,
-    title: "For All Levels",
+    title: "Dla kazdego poziomu",
     description:
-      "Whether you are a developer, no-code builder, or business analyst, the training meets you where you are.",
+      "Niezaleznie czy jestes developerem, no-code builderem czy analitykiem biznesowym - szkolenie spotyka Cie tam, gdzie jestes.",
   },
   {
     icon: GraduationCap,
-    title: "Structured Learning",
+    title: "Ustrukturyzowana nauka",
     description:
-      "Progressive curriculum that builds on each module. From fundamentals to advanced RAG automation.",
+      "Progresywny program, gdzie kazdy modul buduje na poprzednim. Od fundamentow po zaawansowana automatyzacje RAG.",
   },
 ]
 
@@ -33,11 +33,10 @@ export function Features() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-            Why This Training
+            Dlaczego to szkolenie
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty text-muted-foreground">
-            Built for practitioners who want to ship AI automation, not just
-            understand theory.
+            {"Stworzone dla praktykow, ktorzy chca wdrazac automatyzacje AI, a nie tylko rozumiec teorie."}
           </p>
         </div>
 

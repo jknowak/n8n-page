@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Bot, Workflow } from "lucide-react"
 
 export function Hero() {
@@ -12,27 +11,23 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
-        <Badge
-          variant="outline"
-          className="mb-8 gap-2 border-primary/30 bg-primary/5 px-4 py-1.5 text-primary"
-        >
+        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm text-primary">
           <Bot className="size-3.5" />
-          <span>Practical AI Automation Training</span>
-        </Badge>
+          <span>Praktyczne szkolenie z automatyzacji AI</span>
+        </div>
 
         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-          Master LLMs &{" "}
-          <span className="text-primary">n8n Automation</span>
+          {"Opanuj LLM-y i "}
+          <span className="text-primary">{"automatyzacje n8n"}</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-          From LLM theory and prompt engineering to building production-ready
-          RAG workflows in n8n. Everything you need to automate with AI.
+          {"Od teorii modeli jezykowych i prompt engineeringu po budowe produkcyjnych workflow-ow RAG w n8n. Wszystko, czego potrzebujesz, by automatyzowac z AI."}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Button size="lg" className="h-12 px-8 text-base font-semibold">
-            Enroll Now
+            Zapisz sie
             <ArrowRight className="ml-1 size-4" />
           </Button>
           <Button
@@ -41,23 +36,22 @@ export function Hero() {
             className="h-12 border-accent/40 px-8 text-base text-foreground hover:bg-accent/10"
           >
             <Workflow className="mr-1 size-4" />
-            View Curriculum
+            Zobacz program
           </Button>
         </div>
 
-        {/* Stats row */}
         <div className="mt-16 grid w-full max-w-lg grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">6</span>
-            <span className="mt-1 text-sm text-muted-foreground">Modules</span>
+            <span className="mt-1 text-sm text-muted-foreground">{"Modulow"}</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-2xl font-bold text-foreground md:text-3xl">Hands-on</span>
-            <span className="mt-1 text-sm text-muted-foreground">Projects</span>
+            <span className="text-2xl font-bold text-foreground md:text-3xl">Praktyka</span>
+            <span className="mt-1 text-sm text-muted-foreground">{"Projekty hands-on"}</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">n8n</span>
-            <span className="mt-1 text-sm text-muted-foreground">Powered</span>
+            <span className="mt-1 text-sm text-muted-foreground">{"Napedzane"}</span>
           </div>
         </div>
       </div>
