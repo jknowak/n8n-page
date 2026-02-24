@@ -1,60 +1,42 @@
 import {
   Brain,
-  MessageSquareText,
-  GitFork,
   Workflow,
   Database,
-  Layers,
+  ShieldAlert,
 } from "lucide-react"
 
 const modules = [
   {
     number: "01",
-    title: "Teoria LLM",
+    title: "Jak dzialaja LLM-y",
     description:
-      "Zrozum architekture duzych modeli jezykowych. Transformery, tokenizacja, mechanizmy uwagi i sposob generowania tekstu.",
+      "Tokeny, context window, logits, system i user prompt. Zrozumiesz, jak modele generuja tekst, i opanujesz prompt engineering w praktyce.",
     icon: Brain,
-    tags: ["Transformery", "Tokenizacja", "Uwaga"],
+    tags: ["Tokeny", "Logits", "Context", "Prompt Engineering"],
   },
   {
     number: "02",
-    title: "Prompt Engineering",
+    title: "Wstep do n8n",
     description:
-      "Opanuj sztuke tworzenia skutecznych promptow. Techniki chain-of-thought, few-shot learning i formatowanie strukturalnych odpowiedzi.",
-    icon: MessageSquareText,
-    tags: ["Chain-of-Thought", "Few-shot", "System Prompts"],
+      "Triggery, integracje AI, praca z JSON-em, flow control i petle. Zbudujesz pierwsze workflow od zera i nauczysz sie laczyc node-y w dzialajace pipeline-y.",
+    icon: Workflow,
+    tags: ["Triggery", "JSON", "Integracje AI", "Petle"],
   },
   {
     number: "03",
-    title: "LLM vs Workflow vs Agenci",
+    title: "RAG od podstaw",
     description:
-      "Wiedz, kiedy uzyc prostego wywolania LLM, kiedy ustrukturyzowanego workflow, a kiedy autonomicznego agenta. Ramki decyzyjne dla realnych zastosowan.",
-    icon: GitFork,
-    tags: ["Ramki decyzyjne", "Przypadki uzycia", "Architektura"],
+      "Halucynacje i sposoby na nie, embeddingi, indeksowanie dokumentow i odpytywanie baz wektorowych. Pelen pipeline Retrieval-Augmented Generation.",
+    icon: Database,
+    tags: ["Halucynacje", "Embeddingi", "Indeksowanie", "Odpytywanie"],
   },
   {
     number: "04",
-    title: "Podstawy n8n",
+    title: "Agenci, ryzyka, co dalej",
     description:
-      "Praktyczna praca z n8n. Buduj pierwsze workflow, podlaczaj triggery, pracuj z HTTP nodes i integruj API w zautomatyzowane pipeline-y.",
-    icon: Workflow,
-    tags: ["Node-y", "Triggery", "Zapytania HTTP"],
-  },
-  {
-    number: "05",
-    title: "RAG od podstaw",
-    description:
-      "Zaglebienie w Retrieval-Augmented Generation. Bazy wektorowe, embeddingi, strategie chunkowania i pipeline-y wyszukiwania.",
-    icon: Database,
-    tags: ["Embeddingi", "Bazy wektorowe", "Chunking"],
-  },
-  {
-    number: "06",
-    title: "Workflow RAG w n8n",
-    description:
-      "Buduj kompletne pipeline-y RAG w n8n. Od pozyskiwania dokumentow i embeddingu po wyszukiwanie i generowanie odpowiedzi z LLM.",
-    icon: Layers,
-    tags: ["Pipeline-y", "Ingestion", "Produkcyjny RAG"],
+      "Workflow vs agent - kiedy co stosowac. Ryzyka produkcyjne, opcje hostingu, alternatywy dla n8n i plan rozwoju po szkoleniu.",
+    icon: ShieldAlert,
+    tags: ["Agenci", "Ryzyka", "Hosting", "Alternatywy"],
   },
 ]
 
@@ -70,11 +52,11 @@ export function Curriculum() {
             Czego sie nauczysz
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            {"Szesc kompleksowych modulow, ktore przeprowadza Cie od podstaw AI do budowy produkcyjnych workflow-ow automatyzacji."}
+            {"Cztery intensywne bloki, ktore przeprowadza Cie od podstaw AI do budowy produkcyjnych workflow-ow automatyzacji."}
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {modules.map((mod) => (
             <div
               key={mod.number}
@@ -85,7 +67,7 @@ export function Curriculum() {
                   <mod.icon className="size-5" />
                 </div>
                 <span className="font-mono text-sm text-muted-foreground">
-                  {"Modul"} {mod.number}
+                  {"Blok"} {mod.number}
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-semibold text-foreground">

@@ -26,9 +26,11 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-          <Button size="lg" className="h-12 px-8 text-base font-semibold">
-            Zapisz sie
-            <ArrowRight className="ml-1 size-4" />
+          <Button size="lg" className="h-12 px-8 text-base font-semibold" asChild>
+            <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
+              Zapisz sie
+              <ArrowRight className="ml-1 size-4" />
+            </a>
           </Button>
           <Button
             variant="outline"
@@ -42,8 +44,8 @@ export function Hero() {
 
         <div className="mt-16 grid w-full max-w-lg grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
-            <span className="text-2xl font-bold text-foreground md:text-3xl">6</span>
-            <span className="mt-1 text-sm text-muted-foreground">{"Modulow"}</span>
+            <span className="text-2xl font-bold text-foreground md:text-3xl">4</span>
+            <span className="mt-1 text-sm text-muted-foreground">{"Bloki"}</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">Praktyka</span>

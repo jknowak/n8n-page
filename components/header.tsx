@@ -34,12 +34,11 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="font-semibold">
-            Zapisz sie
+          <Button size="sm" className="font-semibold" asChild>
+            <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
+              Zapisz sie
+            </a>
           </Button>
-        </div>
-
-        <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="inline-flex size-9 items-center justify-center rounded-md text-foreground md:hidden"
           aria-label={mobileOpen ? "Zamknij menu" : "Otworz menu"}

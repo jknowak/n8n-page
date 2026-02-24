@@ -17,9 +17,11 @@ export function CTA() {
             {"Dolacz do szkolenia i przejdz od zrozumienia LLM-ow do budowy produkcyjnych workflow-ow n8n z RAG."}
           </p>
           <div className="mt-8">
-            <Button size="lg" className="h-12 px-8 text-base font-semibold">
-              Rozpocznij
-              <ArrowRight className="ml-1 size-4" />
+            <Button size="lg" className="h-12 px-8 text-base font-semibold" asChild>
+              <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
+                Rozpocznij
+                <ArrowRight className="ml-1 size-4" />
+              </a>
             </Button>
           </div>
         </div>
