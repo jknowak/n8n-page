@@ -18,17 +18,17 @@ export function Hero() {
 
         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
           {"Opanuj LLM-y i "}
-          <span className="text-primary">{"automatyzacje n8n"}</span>
+          <span className="text-primary">{"automatyzację n8n"}</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-          {"Od teorii modeli jezykowych i prompt engineeringu po budowe produkcyjnych workflow-ow RAG w n8n. Wszystko, czego potrzebujesz, by automatyzowac z AI."}
+          {"Od teorii modeli językowych i prompt engineeringu po budowę produkcyjnych workflow-ów RAG w n8n. Wszystko, czego potrzebujesz, by automatyzować z AI."}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Button size="lg" className="h-12 px-8 text-base font-semibold" asChild>
-            <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
-              Zapisz sie
+            <a href="mailto:kuba@jknowak.pl?subject=zainteresowanie%20szkoleniem%20n8n">
+              Umów szkolenie
               <ArrowRight className="ml-1 size-4" />
             </a>
           </Button>
@@ -36,24 +36,27 @@ export function Hero() {
             variant="outline"
             size="lg"
             className="h-12 border-accent/40 px-8 text-base text-foreground hover:bg-accent/10"
+            asChild
           >
-            <Workflow className="mr-1 size-4" />
-            Zobacz program
+            <a href="#program">
+              <Workflow className="mr-1 size-4" />
+              Zobacz program
+            </a>
           </Button>
         </div>
 
         <div className="mt-16 grid w-full max-w-lg grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">4</span>
-            <span className="mt-1 text-sm text-muted-foreground">{"Bloki"}</span>
+            <span className="mt-1 text-sm text-muted-foreground">Bloki</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">Praktyka</span>
-            <span className="mt-1 text-sm text-muted-foreground">{"Projekty hands-on"}</span>
+            <span className="mt-1 text-sm text-muted-foreground">Projekty hands-on</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-foreground md:text-3xl">n8n</span>
-            <span className="mt-1 text-sm text-muted-foreground">{"Napedzane"}</span>
+            <span className="mt-1 text-sm text-muted-foreground">Napędzane</span>
           </div>
         </div>
       </div>

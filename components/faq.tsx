@@ -9,29 +9,29 @@ import {
 
 const faqs = [
   {
-    question: "Czy potrzebuje doswiadczenia w programowaniu?",
+    question: "Czy potrzebuję doświadczenia w programowaniu?",
     answer:
-      "Nie jest wymagane wczesniejsze doswiadczenie programistyczne. n8n to wizualny kreator workflow i omawiamy wszystko od podstaw. Jednak znajomosc API lub JSON pomoze Ci szybciej przyswajac material.",
+      "Nie jest wymagane wcześniejsze doświadczenie programistyczne. n8n to wizualny kreator workflow i omawiamy wszystko od podstaw. Jednak znajomość API lub JSON pomoże Ci szybciej przyswajać materiał.",
   },
   {
-    question: "Czym jest n8n i dlaczego warto go uzywac do automatyzacji AI?",
+    question: "Czym jest n8n i dlaczego warto go używać do automatyzacji AI?",
     answer:
-      "n8n to open-source-owe narzedzie do automatyzacji workflow, ktore pozwala laczyc dowolne uslugi za pomoca wizualnego edytora opartego na nodach. Jest idealne do automatyzacji AI, poniewaz wspiera integracje z LLM, bazy wektorowe i zlozana logike warunkowa bez pisania kodu.",
+      "n8n to open-source'owe narzędzie do automatyzacji workflow, które pozwala łączyć dowolne usługi za pomocą wizualnego edytora opartego na węzłach. Jest idealne do automatyzacji AI, ponieważ wspiera integracje z LLM, bazy wektorowe i złożoną logikę warunkową bez pisania kodu.",
   },
   {
-    question: "Co bede w stanie zbudowac po tym szkoleniu?",
+    question: "Co będę w stanie zbudować po tym szkoleniu?",
     answer:
-      "Bedziesz w stanie budowac workflow automatyzacji napedzane AI, w tym pipeline RAG do Q&A z dokumentow, chatboty AI z pamiecia, pipeline generowania tresci, workflow przetwarzania danych z inteligencja LLM i wiele wiecej.",
+      "Będziesz w stanie budować workflow automatyzacji napędzane AI, w tym pipeline RAG do Q&A z dokumentów, chatboty AI z pamięcią, pipeline generowania treści, workflow przetwarzania danych z inteligencją LLM i wiele więcej.",
   },
   {
-    question: "Jak wyglada format szkolenia?",
+    question: "Jak wygląda format szkolenia?",
     answer:
-      "Szkolenie ma strukture progresywnego kursu z praktycznymi cwiczeniami. Kazdy modul buduje na poprzednim, zapewniajac pelne zrozumienie od fundamentow LLM po produkcyjne workflow RAG.",
+      "Szkolenie odbywa się jako otwarty cohort dla zainteresowanych indywidualnie lub jako dedykowany warsztat zamknięty dla organizacji — NGO, firm i zespołów. Napisz, żebyśmy ustalili formę i termin.",
   },
   {
-    question: "Czy potrzebuje wlasnej instancji n8n?",
+    question: "Czy potrzebuję własnej instancji n8n?",
     answer:
-      "Poprowadzimy Cie przez konfiguracje n8n. Mozesz uzyc darmowej wersji self-hosted lub n8n cloud. Szczegolowe instrukcje konfiguracji sa dolaczone do materialow szkoleniowych.",
+      "Przeprowadzimy Cię przez konfigurację n8n. Możesz użyć darmowej wersji self-hosted lub n8n cloud. Szczegółowe instrukcje konfiguracji są dołączone do materiałów szkoleniowych.",
   },
 ]
 
@@ -44,7 +44,7 @@ export function FAQ() {
             FAQ
           </div>
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-            {"Czesto zadawane pytania"}
+            Często zadawane pytania
           </h2>
         </div>
 

@@ -3,27 +3,27 @@ import { Zap, Code2, Users, GraduationCap } from "lucide-react"
 const features = [
   {
     icon: Code2,
-    title: "Praktyczne cwiczenia",
+    title: "Praktyczne ćwiczenia",
     description:
-      "Kazdy modul zawiera realne workflow n8n, ktore budujesz od zera. Zadnych prezentacji tylko z teoria.",
+      "Każdy moduł zawiera realne workflow n8n, które budujesz od zera. Żadnych prezentacji tylko z teorią.",
   },
   {
     icon: Zap,
     title: "Gotowe do produkcji",
     description:
-      "Poznaj wzorce i architektury, ktore mozesz wdrozyc natychmiast w swoim biznesie lub dla klientow.",
+      "Poznaj wzorce i architektury, które możesz wdrożyć natychmiast w swoim biznesie lub dla klientów.",
   },
   {
     icon: Users,
-    title: "Dla kazdego poziomu",
+    title: "Dla każdego poziomu",
     description:
-      "Niezaleznie czy jestes developerem, no-code builderem czy analitykiem biznesowym - szkolenie spotyka Cie tam, gdzie jestes.",
+      "Niezależnie czy jesteś developerem, no-code builderem czy analitykiem biznesowym — szkolenie spotyka Cię tam, gdzie jesteś.",
   },
   {
     icon: GraduationCap,
     title: "Ustrukturyzowana nauka",
     description:
-      "Progresywny program, gdzie kazdy modul buduje na poprzednim. Od fundamentow po zaawansowana automatyzacje RAG.",
+      "Progresywny program, gdzie każdy moduł buduje na poprzednim. Od fundamentów po zaawansowaną automatyzację RAG.",
   },
 ]
 
@@ -36,7 +36,7 @@ export function Features() {
             Dlaczego to szkolenie
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty text-muted-foreground">
-            {"Stworzone dla praktykow, ktorzy chca wdrazac automatyzacje AI, a nie tylko rozumiec teorie."}
+            {"Stworzone dla praktyków, którzy chcą wdrażać automatyzację AI, a nie tylko rozumieć teorię."}
           </p>
         </div>
 

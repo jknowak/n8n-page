@@ -16,11 +16,17 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <a href="/" className="flex items-baseline gap-1">
+          <span className="text-lg font-bold tracking-tight text-primary">
+            n8n
+          </span>
+          <span className="text-lg font-bold tracking-tight text-muted-foreground mx-1">
+            |
+          </span>
           <span className="text-lg font-bold tracking-tight text-foreground">
-            airm
+            jknowak
           </span>
           <span className="text-lg font-bold tracking-tight text-accent">
-            .pro
+            .pl
           </span>
         </a>
 
@@ -35,13 +41,16 @@ export function Header() {
             </a>
           ))}
           <Button size="sm" className="font-semibold" asChild>
-            <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
-              Zapisz sie
+            <a href="mailto:kuba@jknowak.pl?subject=zainteresowanie%20szkoleniem%20n8n">
+              Umów szkolenie
             </a>
           </Button>
+        </div>
+
+        <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="inline-flex size-9 items-center justify-center rounded-md text-foreground md:hidden"
-          aria-label={mobileOpen ? "Zamknij menu" : "Otworz menu"}
+          aria-label={mobileOpen ? "Zamknij menu" : "Otwórz menu"}
         >
           {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -60,8 +69,10 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <Button size="sm" className="mt-2 w-full font-semibold">
-              Zapisz sie
+            <Button size="sm" className="mt-2 w-full font-semibold" asChild>
+              <a href="mailto:kuba@jknowak.pl?subject=zainteresowanie%20szkoleniem%20n8n">
+                Umów szkolenie
+              </a>
             </Button>
           </div>
         </div>

@@ -11,15 +11,15 @@ export function CTA() {
 
         <div className="relative">
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-            {"Gotowy na automatyzacje z AI?"}
+            {"Gotowy na automatyzację z AI?"}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-pretty text-muted-foreground">
-            {"Dolacz do szkolenia i przejdz od zrozumienia LLM-ow do budowy produkcyjnych workflow-ow n8n z RAG."}
+            {"Szkolenie dostępne jako otwarta grupa dla zainteresowanych lub jako dedykowany warsztat dla organizacji — NGO, firmy, zespoły. Napisz, żebyśmy ustalili formę i termin."}
           </p>
           <div className="mt-8">
             <Button size="lg" className="h-12 px-8 text-base font-semibold" asChild>
-              <a href="mailto:jakub.k.nowak@protonmail.com?subject=Zapis%20na%20szkolenie%20LLM%20%26%20n8n">
-                Rozpocznij
+              <a href="mailto:kuba@jknowak.pl?subject=zainteresowanie%20szkoleniem%20n8n">
+                Umów szkolenie
                 <ArrowRight className="ml-1 size-4" />
               </a>
             </Button>

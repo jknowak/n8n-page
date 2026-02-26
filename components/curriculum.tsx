@@ -8,25 +8,25 @@ import {
 const modules = [
   {
     number: "01",
-    title: "Jak dzialaja LLM-y",
+    title: "Jak działają LLMy",
     description:
-      "Tokeny, context window, logits, system i user prompt. Zrozumiesz, jak modele generuja tekst, i opanujesz prompt engineering w praktyce.",
+      "Tokeny, context window, logits, system i user prompt. Zrozumiesz, jak modele generują tekst, i opanujesz prompt engineering w praktyce.",
     icon: Brain,
-    tags: ["Tokeny", "Logits", "Context", "Prompt Engineering"],
+    tags: ["Tokeny", "Context", "Logits", "Prompt Engineering"],
   },
   {
     number: "02",
-    title: "Wstep do n8n",
+    title: "Wstęp do n8n",
     description:
-      "Triggery, integracje AI, praca z JSON-em, flow control i petle. Zbudujesz pierwsze workflow od zera i nauczysz sie laczyc node-y w dzialajace pipeline-y.",
+      "Triggery, integracje AI, praca z JSON-em, flow control i pętle. Zbudujesz pierwsze workflow od zera i nauczysz się łączyć node-y w działające pipeline-y.",
     icon: Workflow,
-    tags: ["Triggery", "JSON", "Integracje AI", "Petle"],
+    tags: ["Triggery", "Integracje AI", "JSON", "Pętle"],
   },
   {
     number: "03",
     title: "RAG od podstaw",
     description:
-      "Halucynacje i sposoby na nie, embeddingi, indeksowanie dokumentow i odpytywanie baz wektorowych. Pelen pipeline Retrieval-Augmented Generation.",
+      "Halucynacje i sposoby na nie, embeddingi, indeksowanie dokumentów i odpytywanie baz wektorowych. Pełen pipeline Retrieval-Augmented Generation.",
     icon: Database,
     tags: ["Halucynacje", "Embeddingi", "Indeksowanie", "Odpytywanie"],
   },
@@ -34,7 +34,7 @@ const modules = [
     number: "04",
     title: "Agenci, ryzyka, co dalej",
     description:
-      "Workflow vs agent - kiedy co stosowac. Ryzyka produkcyjne, opcje hostingu, alternatywy dla n8n i plan rozwoju po szkoleniu.",
+      "Workflow vs agent — kiedy co stosować. Ryzyki produkcyjne, opcje hostingu, alternatywy dla n8n i plan rozwoju po szkoleniu.",
     icon: ShieldAlert,
     tags: ["Agenci", "Ryzyka", "Hosting", "Alternatywy"],
   },
@@ -49,10 +49,10 @@ export function Curriculum() {
             Program szkolenia
           </div>
           <h2 className="text-balance text-3xl font-bold text-foreground md:text-5xl">
-            Czego sie nauczysz
+            Czego się nauczysz
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            {"Cztery intensywne bloki, ktore przeprowadza Cie od podstaw AI do budowy produkcyjnych workflow-ow automatyzacji."}
+            {"Cztery intensywne bloki, które przeprowadzą Cię od podstaw AI do budowy produkcyjnych workflow-ów automatyzacji."}
           </p>
         </div>
 
